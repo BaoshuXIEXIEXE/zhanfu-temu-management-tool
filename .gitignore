@@ -1,0 +1,17 @@
+# Device-local shop registry and runtime output
+**/assets/stores.json
+**/assets/stores.local.json
+config/stores.local.json
+logs/
+*.log
+
+# Credentials and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS/editor files
+.DS_Store
+Thumbs.db

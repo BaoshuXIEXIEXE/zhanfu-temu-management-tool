@@ -1,0 +1,22 @@
+{
+  "apiPort": 12678,
+  "requiredKernel": 140,
+  "bookmarkTitle": "卖家中心",
+  "sellerCentralHost": "agentseller-us.temu.com",
+  "authorizedStores": {
+    "example-store": {
+      "mallId": 0,
+      "existsVerified": false,
+      "validated": false,
+      "monitoringActivatedOn": "YYYY-MM-DD"
+    }
+  },
+  "disposableStartupHosts": [
+    "www.alisold.com",
+    "www.sheinshuju.com",
+    "sso.geiwohuo.com",
+    "www.temaishuju.com"
+  ],
+  "disposableExtensionPrefixes": [],
+  "preserveExtensionPrefixes": []
+}

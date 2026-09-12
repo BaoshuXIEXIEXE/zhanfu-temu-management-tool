@@ -1,0 +1,10 @@
+#!/bin/zsh
+set -euo pipefail
+
+script_dir=${0:A:h}
+node_bin="/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+if [[ ! -x "$node_bin" ]]; then
+  node_bin=$(command -v node)
+fi
+
+exec "$node_bin" "$script_dir/zhanfu-temu-launch.mjs" "$@"

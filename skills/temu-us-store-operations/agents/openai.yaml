@@ -1,0 +1,6 @@
+interface:
+  display_name: "TEMU 美国站运营管家"
+  short_description: "全量过滤TEMU六类消息并保留经营风险"
+  default_prompt: "Use $temu-us-store-operations to run 消息过滤 for any current or future TEMU US store registered in the authorized ZhanFu store registry, scan every page in all six categories, clear only allowed items, and report the final readback."
+policy:
+  allow_implicit_invocation: true

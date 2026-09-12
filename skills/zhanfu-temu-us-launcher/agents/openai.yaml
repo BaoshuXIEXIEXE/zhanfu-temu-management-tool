@@ -1,0 +1,4 @@
+interface:
+  display_name: "站斧 TEMU 美国站快速启动"
+  short_description: "启动指定站斧店铺并验证 TEMU 美国站连接"
+  default_prompt: "使用 $zhanfu-temu-us-launcher 打开27希音并进入TEMU美国站。"
