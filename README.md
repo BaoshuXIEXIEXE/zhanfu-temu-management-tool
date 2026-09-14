@@ -1,10 +1,11 @@
 # 站斧 + TEMU 管理工具
 
-Continuously updated source of truth for managing authorized TEMU US Seller Central stores through ZhanFu and approved TEMU Open Platform APIs. The repository keeps the Mac planning task and the dedicated Windows execution task on the same reviewed rule set.
+Continuously updated source of truth for managing authorized TEMU US Seller Central stores through ZhanFu and approved TEMU Open Platform APIs. The default operating profile is the United States, semi-managed, for China-based sellers. The repository keeps the Mac planning task and the dedicated Windows execution task on the same reviewed rule set.
 
 ## What it supports
 
 - Securely start or reuse an authorized ZhanFu shop session and verify kernel 140, a live WebDriver/CDP endpoint, the TEMU Seller Central domain, and the visible US site.
+- Keep only task-relevant TEMU Seller Central pages in the authorized store browser after readiness; close confirmed unrelated startup, SHEIN, extension, marketing, blank, and duplicate tabs without touching personal-browser tabs.
 - Run `消息过滤 <店铺入口>` across all six message categories: 店铺通知、商品合规、订单履约、售后通知、库存管理、其他.
 - Traverse every page/backlog layer, mark only approved low-risk or closed historical notices as read, retain actionable risks, and finish with a six-category readback.
 - Triage deadlines, pre-sale/after-sale tickets, refunds, returns, chargebacks, delivery failures, tracking exceptions, fulfillment appeals, compliance/IP notices, inventory risk, ads, traffic, ROAS, finance, and account health.

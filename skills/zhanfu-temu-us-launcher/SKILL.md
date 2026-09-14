@@ -15,12 +15,14 @@ zhanfu-temu <店铺名称>
 
 Allowed stores are defined in `assets/stores.json`. The initial validated store is `27希音`.
 
+The launcher defaults to the **United States site for a semi-managed China-based seller**. It must not silently enter a different market or seller model.
+
 The launcher:
 
 1. Reuses the ZhanFu WebDriver HTTP service on `127.0.0.1:12678`, or starts ZhanFu with the official WebDriver arguments when it is not running.
 2. Resolves the exact shop name through `GetMallByName` and opens only that shop.
 3. Requires browser kernel 140 and verifies the returned CDP `/json/version` endpoint before browser automation.
-4. Closes only the known disposable startup pages listed in `assets/stores.json`.
+4. Uses a confirmed startup page to reach the Seller Central bookmark, then closes confirmed unrelated startup, SHEIN, extension, marketing, blank, and duplicate tabs.
 5. Opens the bookmark named `卖家中心`, selects the US entry, and verifies the final host is `agentseller-us.temu.com`.
 6. Returns compact JSON with `ready`, `needs_user_login`, or a precise failure state.
 
@@ -35,5 +37,6 @@ The user has authorized the known Seller Central account-ID/store-name sharing d
 - The public ZhanFu WebDriver API does not expose an update-existing-shop action. Report `kernel_update_required` instead of inventing an API call.
 - Do not open, close, or operate shops outside `assets/stores.json`.
 - Enter only the TEMU US site. Stop if the final host or visible site indicator is not US.
+- Once TEMU US is ready, retain only the Seller Central page(s) required for the active task in the authorized store browser. Do not close a page whose purpose is unclear, and do not touch the user's personal-browser tabs.
 - Startup navigation and read-only verification are allowed. Customer replies, refunds, appeals, product changes, ad changes, and publication require their separate approval rules.
 - Keep the Mac awake and unlocked for GUI-dependent steps. Do not claim the workflow can run while the Mac is asleep or offline.

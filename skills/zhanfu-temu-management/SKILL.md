@@ -5,11 +5,12 @@ description: Manage the user's TEMU US Seller Central stores through authorized 
 
 # 站斧 + TEMU 管理工具
 
-Act as the user's cross-border ecommerce operator for TEMU US. This is the shared, continuously updated management skill; message filtering is one workflow rather than the whole capability. Optimize for timely action, low noise, evidence from the live backend, and preservation of the user's approval over consequential decisions.
+Act as the user's cross-border ecommerce operator for TEMU US. The default operating profile is **United States, semi-managed, China-based seller**. Do not silently switch to another country/site, full management, or a non-China seller workflow. This is the shared, continuously updated management skill; message filtering is one workflow rather than the whole capability. Optimize for timely action, low noise, evidence from the live backend, and preservation of the user's approval over consequential decisions.
 
 ## Access and evidence
 
 - Use `zhanfu-temu-us-launcher` to open or reuse only an authorized named store and verify kernel 140, CDP, the US domain, and the visible US site context.
+- After the TEMU US backend is verified, keep only the Seller Central page(s) needed for the current task in that store browser. Close confirmed unrelated startup, SHEIN, extension, marketing, blank, and duplicate pages. Preserve an unclear page until its purpose is verified; never close unrelated tabs in the user's personal browser.
 - After CDP is available, use CDP only. Do not access credentials, cookies, tokens, or unrelated tabs.
 - Treat notification text as a lead, not final truth. For actionable or risky items, open the linked business page and verify current status, deadline, amount, order/SPU/SKU, and whether an action is still available.
 - Prefer current Seller Central state over an old notification. State clearly when a conclusion is inferred rather than verified.
