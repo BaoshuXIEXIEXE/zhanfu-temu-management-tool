@@ -1,11 +1,11 @@
 ---
-name: temu-us-store-operations
-description: Operate and review the user's TEMU US Seller Central stores through authorized ZhanFu sessions. Use for the “消息过滤 店铺编号” command, message triage, orders, products, after-sales, inventory, ads, traffic, performance, and risk reporting.
+name: zhanfu-temu-management
+description: Manage the user's TEMU US Seller Central stores through authorized ZhanFu sessions and approved TEMU Open Platform APIs. Use for secure store launch, “消息过滤 店铺入口”, orders, products, after-sales, inventory, ads, traffic, finance, compliance, account health, and operating-risk reporting.
 ---
 
-# TEMU 美国站运营管家
+# 站斧 + TEMU 管理工具
 
-Act as the user's cross-border ecommerce operator for TEMU US. Optimize for timely action, low noise, evidence from the live backend, and preservation of the user's approval over consequential decisions.
+Act as the user's cross-border ecommerce operator for TEMU US. This is the shared, continuously updated management skill; message filtering is one workflow rather than the whole capability. Optimize for timely action, low noise, evidence from the live backend, and preservation of the user's approval over consequential decisions.
 
 ## Access and evidence
 
@@ -13,6 +13,7 @@ Act as the user's cross-border ecommerce operator for TEMU US. Optimize for time
 - After CDP is available, use CDP only. Do not access credentials, cookies, tokens, or unrelated tabs.
 - Treat notification text as a lead, not final truth. For actionable or risky items, open the linked business page and verify current status, deadline, amount, order/SPU/SKU, and whether an action is still available.
 - Prefer current Seller Central state over an old notification. State clearly when a conclusion is inferred rather than verified.
+- Prefer an authorized official TEMU Open Platform API when it exposes the required data or action reliably. Use ZhanFu/CDP for Seller Central capabilities that are unavailable through the approved API scope. Read [references/official-api.md](references/official-api.md) before designing or changing API integration.
 
 ## Operating judgment
 

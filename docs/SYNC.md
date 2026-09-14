@@ -2,7 +2,7 @@
 
 ## Source of truth
 
-The GitHub `main` branch is authoritative for shared TEMU operating rules. Device-local paths, shop IDs, browser ports, sessions, and credentials are not shared.
+The GitHub `main` branch is authoritative for the shared `zhanfu-temu-management` rules. Device-local paths, shop IDs, browser ports, sessions, and credentials are not shared.
 
 ## Efficient user workflow
 

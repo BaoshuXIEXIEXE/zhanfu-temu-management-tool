@@ -1,6 +1,6 @@
-# ZhanFu + TEMU US Store Operations
+# 站斧 + TEMU 管理工具
 
-Private source of truth for operating authorized TEMU US Seller Central stores through ZhanFu. The repository keeps the Mac planning task and the dedicated Windows execution task on the same reviewed rule set.
+Continuously updated source of truth for managing authorized TEMU US Seller Central stores through ZhanFu and approved TEMU Open Platform APIs. The repository keeps the Mac planning task and the dedicated Windows execution task on the same reviewed rule set.
 
 ## What it supports
 
@@ -9,6 +9,7 @@ Private source of truth for operating authorized TEMU US Seller Central stores t
 - Traverse every page/backlog layer, mark only approved low-risk or closed historical notices as read, retain actionable risks, and finish with a six-category readback.
 - Triage deadlines, pre-sale/after-sale tickets, refunds, returns, chargebacks, delivery failures, tracking exceptions, fulfillment appeals, compliance/IP notices, inventory risk, ads, traffic, ROAS, finance, and account health.
 - Locate products, orders, tickets, SPU/SKU records and prepare evidence, summaries, drafts, and recommended actions.
+- Prefer authorized official TEMU APIs for structured monitoring and supported operations; use ZhanFu/CDP for Seller Central capabilities outside the approved API scope.
 
 ## Safety boundary
 
@@ -18,7 +19,7 @@ Credentials, cookies, tokens, OTPs, customer data, and real shop IDs are not sto
 
 ## Skills
 
-- `skills/temu-us-store-operations`: business rules, six-category message filtering, reporting, and approval gates.
+- `skills/zhanfu-temu-management`: shared store-management rules, six-category message filtering, official-API routing, reporting, and approval gates.
 - `skills/zhanfu-temu-us-launcher`: deterministic Mac launcher and live US-site verification.
 
 The Windows execution host follows the same business rules but uses its local ZhanFu installation and paths. Host-specific launch adapters and `stores.local.json` remain local until separately reviewed and sanitized.

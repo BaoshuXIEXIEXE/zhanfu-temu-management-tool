@@ -1,0 +1,6 @@
+interface:
+  display_name: "站斧 + TEMU 管理工具"
+  short_description: "管理TEMU消息、商品、订单、售后、库存与经营风险"
+  default_prompt: "Use $zhanfu-temu-management to manage an authorized TEMU US store, verify live state through official APIs or ZhanFu, and preserve approval gates for consequential actions."
+policy:
+  allow_implicit_invocation: true
